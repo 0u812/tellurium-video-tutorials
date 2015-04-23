@@ -1,0 +1,9 @@
+*.swp
+*~
+*.pyc
+*#
+.#*
+*.orig
+*.kate-swp
+
+guide/node_modules
