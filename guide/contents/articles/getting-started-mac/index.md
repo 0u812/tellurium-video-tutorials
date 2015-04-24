@@ -5,7 +5,8 @@ date: 2015-04-24
 template: article.jade
 ---
 
-Welcome to your new <strong> blog </strong>! This is the default blog template with RSS, pagination and an archive. There are other templates available -- run `wintersmith new --help` to list them.
+This video will show you how to launch Tellurium for Mac OS X and load a SBML
+model with layout. SBML models are available [here](https://github.com/0u812/sbnw/releases/download/1.2.4/testcases.zip):
 
 <video id="really-cool-video" class="video-js vjs-default-skin" controls
  preload="auto" width="640" height="264" poster="really-cool-video-poster.jpg"
