@@ -5,6 +5,8 @@ date: 2015-04-24
 template: article.jade
 ---
 
+<img src="/img/mac.png" alt="Mac OS X" style="width: 2em; height: auto"/>
+
 This video will show you how to launch Tellurium for Mac OS X and load an SBML
 model with layout. SBML models are available [here](https://github.com/0u812/sbnw/releases/download/1.2.4/testcases.zip):
 
