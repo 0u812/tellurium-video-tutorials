@@ -5,7 +5,17 @@ date: 2013-04-30
 template: article.jade
 ---
 
-Welcome to your new blog! This is the default blog template with RSS, pagination and an archive. There are other templates available -- run `wintersmith new --help` to list them.
+Welcome to your new <strong> blog </strong>! This is the default blog template with RSS, pagination and an archive. There are other templates available -- run `wintersmith new --help` to list them.
+
+<video id="really-cool-video" class="video-js vjs-default-skin" controls
+ preload="auto" width="640" height="264" poster="really-cool-video-poster.jpg"
+ data-setup='{}'>
+  <source src="/articles/hello-world/big-buck-bunny_trailer.webm" type='video/webm'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser
+    that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+</video>
 
 ## _Repeat after me:_ This is my blog. There are many like it, but this one is mine. My blog is my best friend. It is my life. I must master it as I must master my life. My blog, without me, is useless. Without my blog, I am useless.
 
