@@ -1,6 +1,6 @@
 ---
 title: Getting Started On Mac
-author: the-wintersmith
+author: kyle
 date: 2015-04-24
 template: article.jade
 ---
