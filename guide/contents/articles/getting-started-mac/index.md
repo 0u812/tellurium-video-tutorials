@@ -3,6 +3,7 @@ title: Getting Started On Mac
 author: kyle
 date: 2015-04-24
 template: article.jade
+platform: mac
 ---
 
 This video will show you how to launch Tellurium for Mac OS X and load an SBML
