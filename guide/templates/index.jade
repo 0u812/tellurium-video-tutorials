@@ -8,8 +8,9 @@ block content
         p.date
           span= moment.utc(article.date).format('DD. MMMM YYYY')
         h2
-          a(href=article.url)= article.title
           img(src= "/img/mac.png" style= "width: 1em; height: auto")
+          | &nbsp
+          a(href=article.url)= article.title
       section.content
         if article.intro.length > 0
           | !{ typogr(article.intro).typogrify() }
