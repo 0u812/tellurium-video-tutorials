@@ -10,6 +10,8 @@ block content
         h2
           if article.metadata.platform == "mac"
             img(src= "/img/mac.png" style= "width: 1em; height: auto")
+          else if article.metadata.platform == "win"
+            img(src= "/img/win2012.png" style= "width: 1em; height: auto")
           | &nbsp
           a(href=article.url)= article.title
       section.content
