@@ -9,14 +9,19 @@ block content
           span= moment.utc(article.date).format('DD. MMMM YYYY')
         h2
           if article.metadata.platform == "mac"
-            img(src= "/img/mac.png" style= "width: 1em; height: auto")
+            img(src= url + "/img/mac.png" style= "width: 1em; height: auto")
           else if article.metadata.platform == "win"
-            img(src= "/img/win2012.png" style= "width: 1em; height: auto")
+            img(src= url + "/img/win2012.png" style= "width: 1em; height: auto")
           | &nbsp
           a(href=article.url)= article.title
       section.content
         if article.intro.length > 0
           | !{ typogr(article.intro).typogrify() }
+          div
+            video(id="really-cool-video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264" poster="really-cool-video-poster.jpg" data-setup='{}')
+              source(src=article.url+"video.webm" type='video/webm')
+              p(class="vjs-no-js")
+                  To view this video please enable JavaScript, and consider upgrading to a web browser that a(href="http://videojs.com/html5-video-support/" target="_blank")supports HTML5 video
         if article.hasMore
           p.more
             a(href=article.url) more
