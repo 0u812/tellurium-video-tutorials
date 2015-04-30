@@ -17,6 +17,12 @@ block header
 block content
   article.article
     section.content!= typogr(page.html).typogrify()
+    div
+      video(id="really-cool-video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264" poster="really-cool-video-poster.jpg" data-setup='{}')
+        source(src=url+page.url+"video.webm" type='video/webm')
+        p(class="vjs-no-js")
+          To view this video please enable JavaScript, and consider upgrading to a web browser that a(href="http://videojs.com/html5-video-support/" target="_blank")supports HTML5 video
+
 
 block prepend footer
   div.nav
