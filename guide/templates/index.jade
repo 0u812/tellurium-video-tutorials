@@ -13,7 +13,7 @@ block content
           else if article.metadata.platform == "win"
             img(src= url + "/img/win2012.png" style= "width: 1em; height: auto")
           | &nbsp
-          a(href=article.url)= article.title
+          a(href=url+article.url)= article.title
       section.content
         if article.intro.length > 0
           | !{ typogr(article.intro).typogrify() }
