@@ -24,16 +24,16 @@ block content
                   To view this video please enable JavaScript, and consider upgrading to a web browser that a(href="http://videojs.com/html5-video-support/" target="_blank")supports HTML5 video
         if article.hasMore
           p.more
-            a(href=article.url) more
+            a(href=url + article.url) more
 
 block prepend footer
   div.nav
     if prevPage
-      a(href=prevPage.url) « Newer
+      a(href=url + prevPage.url) « Newer
     else
-      a(href='/archive.html') « Archives
+      a(href=url + 'archive.html') « Archives
     if nextPage
-      a(href=nextPage.url) Next page »
+      a(href=url + nextPage.url) Next page »
 
 
 
