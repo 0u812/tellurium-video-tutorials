@@ -9,9 +9,11 @@ block content
           span= moment.utc(article.date).format('DD. MMMM YYYY')
         h2
           if article.metadata.platform == "mac"
-            img(src= url + "/img/mac.png" style= "width: 1em; height: auto")
+            a(href=url+"/mac.html")
+              img(src= url + "/img/mac.png" style= "width: 1em; height: auto")
           else if article.metadata.platform == "win"
-            img(src= url + "/img/win2012.png" style= "width: 1em; height: auto")
+            a(href=url+"/win.html")
+              img(src= url + "/img/win2012.png" style= "width: 1em; height: auto")
           | &nbsp
           a(href=url+article.url)= article.title
       section.content
@@ -31,7 +33,7 @@ block prepend footer
     if prevPage
       a(href=url + prevPage.url) « Newer
     else
-      a(href=url + 'archive.html') « Archives
+      a(href=url + '/archive.html') « Archives
     if nextPage
       a(href=url + nextPage.url) Next page »
 
